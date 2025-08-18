@@ -6,7 +6,7 @@ import { RootStackParamList } from "../../navigation/navigation";
 type Props = NativeStackScreenProps<RootStackParamList, 'TapNavi'>;
 
 export default function TapNaviScreen({ navigation }: Props) {
-    return(
+    return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>TapNaviScreen</Text>
             <Button title="Go Back" onPress={() => navigation.goBack()} />

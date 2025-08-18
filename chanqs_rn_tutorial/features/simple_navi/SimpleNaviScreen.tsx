@@ -6,11 +6,11 @@ import { RootStackParamList } from "../../navigation/navigation";
 type Props = NativeStackScreenProps<RootStackParamList, 'SimpleNavi'>;
 
 export default function SimpleNaviScreen({ navigation }: Props) {
-    return(
+    return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>SimpleNaviScreen</Text>
-        <Button title="Go Back" onPress={() => navigation.goBack()} />
-        <Button title="Replace to Home" onPress={() => navigation.replace('Home')} />
+            <Text>SimpleNaviScreen</Text>
+            <Button title="Go Back" onPress={() => navigation.goBack()} />
+            <Button title="Replace to Home" onPress={() => navigation.replace('Home')} />
         </View>
     );
 }
